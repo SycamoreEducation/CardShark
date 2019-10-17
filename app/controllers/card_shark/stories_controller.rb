@@ -30,7 +30,7 @@ module CardShark
           name = label['name'].to_sym
           project_id = CardShark.label_project_map[name] if keys.include?(name)
           story_type = name.downcase if [:Bug, :Feature, :Chore].include?(name)
-          labels << {name: name}
+          labels << { name: name }
         end
 
         params = {
